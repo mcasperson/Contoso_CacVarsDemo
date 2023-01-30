@@ -1,0 +1,15 @@
+variable "variable[2]" {
+    value "c" {}
+}
+
+variable "variable[1]" {
+    value "a" {
+        environment = ["development"]
+    }
+
+    value "b" {
+        environment = ["test"]
+    }
+
+    value {}
+}
