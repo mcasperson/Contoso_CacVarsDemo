@@ -7,7 +7,7 @@ step "deploy-container" {
     action {
         action_type = "Octopus.KubernetesDeployContainers"
         environments = ["development", "test", "production"]
-        notes = "Deploy K8s container"
+        notes = "Deploy K8s container 2"
         properties = {
             Octopus.Action.EnabledFeatures = "Octopus.Features.KubernetesService,Octopus.Features.KubernetesIngress,Octopus.Features.KubernetesConfigMap,Octopus.Features.KubernetesSecret"
             Octopus.Action.Kubernetes.DeploymentTimeout = "180"
