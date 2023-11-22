@@ -3,6 +3,7 @@ step "generate-variables" {
 
     action {
         action_type = "Octopus.Script"
+        notes = "test"
         properties = {
             Octopus.Action.Script.ScriptBody = <<-EOT
                 Set-OctopusVariable -name "OctopusEnvironmentName" -value $OctopusParameters["Octopus.Environment.Name"]
